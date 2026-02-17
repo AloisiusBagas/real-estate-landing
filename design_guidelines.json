@@ -1,0 +1,146 @@
+{
+  "project_name": "HOUSFY",
+  "identity": "E1: The Anti-AI Designer",
+  "theme_strategy": "light_mode_dominant_with_dark_accents",
+  "design_philosophy": {
+    "core_principles": [
+      "Fusion over Imitation: Mix Architectural Precision with Lifestyle Warmth",
+      "Emotion First: Trust, Aspiration, Exclusivity",
+      "Content is King: Editorial-style layouts, high-res imagery",
+      "Negative Space: Luxurious padding (p-24, p-32)",
+      "Contrast: Deep Charcoal vs Warm Gold vs Crisp White"
+    ],
+    "anti_patterns": [
+      "No generic 'Bootstrap' grids",
+      "No 'Inter' for headings",
+      "No full-screen gradients (use subtle overlays)",
+      "No standard shadow-sm (use layered, diffuse shadows)"
+    ]
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Outfit, sans-serif",
+      "body": "Manrope, sans-serif",
+      "accent": "Playfair Display, serif"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-none",
+      "h2": "text-4xl md:text-5xl font-semibold tracking-tight",
+      "h3": "text-2xl md:text-3xl font-medium",
+      "body": "text-base md:text-lg leading-relaxed text-muted-foreground",
+      "caption": "text-sm uppercase tracking-widest font-semibold"
+    },
+    "instructions": "Import 'Outfit' and 'Manrope' from Google Fonts. Use Outfit for all main headings to give a modern premium feel. Use Manrope for body text for optimal readability."
+  },
+  "colors": {
+    "palette": {
+      "primary": "#1A1A1A",
+      "secondary": "#FFFFFF",
+      "accent": "#C19A6B",
+      "accent_hover": "#D4AF37",
+      "background": "#FFFFFF",
+      "background_alt": "#F8F9FA",
+      "surface_dark": "#121212",
+      "text_primary": "#1A1A1A",
+      "text_secondary": "#6B7280",
+      "border_light": "#E5E7EB",
+      "border_gold": "rgba(193, 154, 107, 0.3)"
+    },
+    "usage": {
+      "hero_overlay": "bg-black/40",
+      "glass_surface": "bg-white/80 backdrop-blur-xl border border-white/20",
+      "gold_button": "bg-[#C19A6B] text-white hover:bg-[#D4AF37] transition-colors duration-300",
+      "dark_section": "bg-[#121212] text-white"
+    }
+  },
+  "layout_strategies": {
+    "spacing": {
+      "section_padding": "py-24 md:py-32",
+      "container_padding": "px-6 md:px-12",
+      "element_gap": "gap-8 md:gap-12"
+    },
+    "grid_system": {
+      "masonry": "columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8",
+      "bento": "grid grid-cols-1 md:grid-cols-12 gap-6"
+    }
+  },
+  "components": {
+    "header": {
+      "style": "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+      "variants": {
+        "transparent": "bg-transparent text-white border-b border-white/10",
+        "scrolled": "bg-white/90 backdrop-blur-md text-[#1A1A1A] shadow-sm"
+      },
+      "cta_button": "rounded-full px-6 py-2.5 font-semibold text-sm transition-transform hover:scale-105"
+    },
+    "hero": {
+      "layout": "h-screen min-h-[700px] relative flex items-center",
+      "typography": "Left-aligned, imposing, high contrast against dark overlay",
+      "stats_card": "absolute -bottom-16 right-6 md:right-20 bg-white p-8 rounded-2xl shadow-2xl max-w-sm w-full z-20 hidden md:block"
+    },
+    "cards": {
+      "property_card": {
+        "style": "group relative overflow-hidden rounded-2xl bg-white shadow-sm hover:shadow-xl transition-all duration-500",
+        "image": "h-[400px] w-full object-cover transition-transform duration-700 group-hover:scale-110",
+        "overlay": "absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500",
+        "content": "p-6 relative z-10"
+      },
+      "feature_card": "p-8 rounded-2xl bg-[#F8F9FA] border border-transparent hover:border-[#C19A6B]/30 transition-colors"
+    },
+    "buttons": {
+      "primary": "bg-[#C19A6B] text-white rounded-full px-8 py-4 font-semibold hover:shadow-lg hover:shadow-[#C19A6B]/20 transition-all active:scale-95",
+      "secondary": "bg-white text-[#1A1A1A] border border-[#1A1A1A]/10 rounded-full px-8 py-4 font-semibold hover:bg-[#F8F9FA] transition-all",
+      "outline_light": "border border-white text-white rounded-full px-8 py-4 font-semibold hover:bg-white hover:text-[#1A1A1A] transition-all"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1760067537639-0fb475c87657?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "property_1": "https://images.unsplash.com/photo-1706808849802-8f876ade0d1f?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "property_2": "https://images.unsplash.com/photo-1766603636562-531bb3e1dda8?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "property_3": "https://images.unsplash.com/photo-1706808849780-7a04fbac83ef?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "about_couple": "https://images.pexels.com/photos/7937959/pexels-photo-7937959.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "interior_detail": "https://images.unsplash.com/photo-1768144092684-c1a5dd6c7aad?crop=entropy&cs=srgb&fm=jpg&q=85"
+    }
+  },
+  "motion": {
+    "library": "framer-motion",
+    "variants": {
+      "fadeInUp": {
+        "initial": { "opacity": 0, "y": 40 },
+        "whileInView": { "opacity": 1, "y": 0 },
+        "viewport": { "once": true, "margin": "-100px" },
+        "transition": { "duration": 0.8, "ease": [0.22, 1, 0.36, 1] }
+      },
+      "stagger": {
+        "container": {
+          "hidden": { "opacity": 0 },
+          "show": {
+            "opacity": 1,
+            "transition": { "staggerChildren": 0.1 }
+          }
+        },
+        "item": {
+          "hidden": { "opacity": 0, "y": 20 },
+          "show": { "opacity": 1, "y": 0 }
+        }
+      }
+    }
+  },
+  "accessibility": {
+    "contrast_check": "Ensure Gold (#C19A6B) is used on White/Dark backgrounds with sufficient size. Avoid Gold text on White bg for small fonts.",
+    "focus_states": "focus:ring-2 focus:ring-[#C19A6B] focus:outline-none",
+    "reduced_motion": "Respect prefers-reduced-motion media query"
+  },
+  "testing": {
+    "attributes": "data-testid",
+    "format": "kebab-case (e.g., 'hero-cta-button', 'property-card-1')"
+  },
+  "universal_guidelines": [
+    "Don't make generic centered layouts.",
+    "Create depth through layered design elements.",
+    "Use glass-morphism effects with backdrop filters.",
+    "NEVER use generic AI emojis.",
+    "Every interaction needs micro-animations."
+  ]
+}
