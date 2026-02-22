@@ -1,0 +1,4 @@
+.\.gitconfig
+.\backend\requirements.txt
+.\frontend\plugins\visual-edits\dev-server-setup.js
+.\frontend\public\index.html
