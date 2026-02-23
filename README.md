@@ -1,8 +1,8 @@
 # 🏡 HOUSFY - Premium Real Estate Landing Page
 
-![Hero Section](./public/demo/hero.PNG)
-![Showcase Section](./public/demo/showcase.PNG)
-![About Us Section](./public/demo/aboutUs.PNG)
+![Hero Section](./public/Demo/hero.PNG)
+![Showcase Section](./public/Demo/showcase.PNG)
+![About Us Section](./public/Demo/aboutUs.PNG)
 
 <p align="center">
   <strong>A modern, high-performance real estate landing page built with React and Tailwind CSS.</strong>
