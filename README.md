@@ -1,7 +1,6 @@
 # 🏡 HOUSFY - Premium Real Estate Landing Page
 
 ![Hero Section](./public/Demo/hero.PNG)
-![About Us Section](./public/Demo/aboutUs.PNG)
 ![Showcase Section](./public/Demo/showcase.PNG)
 ![Contact Section](./public/Demo/contact.PNG)
 
